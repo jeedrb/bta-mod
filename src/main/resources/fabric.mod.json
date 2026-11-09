@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "examplemod",
+	"id": "playground",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This mod aims to help new BTA modders.",
+	"name": "Jeed's BTA Playground",
+	"description": "I am up to no good!",
 	"authors": [
-		"Turnip Labs"
+		"Jeed/JeedRB"
 	],
 	"contact": {
 		"homepage": "",
@@ -16,11 +16,11 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"turniplabs.examplemod.ExampleMod"
+			"jeed.playground.Playground"
 		]
 	},
 	"mixins": [
-		"examplemod.mixins.json"
+		"playground.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=${fabricloader}",

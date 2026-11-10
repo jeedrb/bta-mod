@@ -1,4 +1,4 @@
-package jeed.playground.mixin;
+package jeed.toolbox.mixin;
 
 import net.minecraft.core.entity.Entity;
 import org.spongepowered.asm.mixin.Mixin;

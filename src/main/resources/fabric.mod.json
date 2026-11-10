@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "playground",
+	"id": "toolbox",
 	"version": "${version}",
-	"name": "Jeed's BTA Playground",
+	"name": "Jeed's BTA Toolbox",
 	"description": "I am up to no good!",
 	"authors": [
 		"JeedRB"
@@ -16,11 +16,11 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"jeed.playground.Playground"
+			"jeed.toolbox.Toolbox"
 		]
 	},
 	"mixins": [
-		"playground.mixins.json"
+		"toolbox.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=${fabricloader}",

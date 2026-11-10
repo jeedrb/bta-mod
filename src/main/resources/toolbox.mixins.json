@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "jeed.playground.mixin",
+  "package": "jeed.toolbox.mixin",
   "compatibilityLevel": "JAVA_${java}",
   "injectors": {
     "defaultRequire": 1

@@ -1,9 +1,6 @@
-learning to make a BTA mod
+https://modrinth.com/mod/bta-toolbox (whenever it gets approved)
 
-0.1
-so far all it does is keep you from falling off the very edge of blocks when uncrouching
+Small fixes and features for Better Than Adventure! 8.0.1
 
-0.2
-player armor is hidden now
-
-highkey GPL3
+- Un-sneaking at the very edge of a block no longer drops you off the side
+- Player armor is hidden

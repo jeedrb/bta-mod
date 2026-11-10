@@ -1,6 +1,8 @@
 package jeed.toolbox.mixin;
 
 
+import jeed.toolbox.ToolboxConfig;
+import jeed.toolbox.ToolboxOptions;
 import net.minecraft.client.render.entity.MobRendererBipedArmored;
 import net.minecraft.core.entity.IArmorWearing;
 import net.minecraft.core.entity.Mob;
@@ -17,12 +19,12 @@ import org.useless.dragonfly.models.entity.StaticEntityModel;
 @Mixin(MobRendererBipedArmored.class)
 public abstract class ArmorMixin<T extends Mob & IArmorWearing<HumanArmorShape>> {
 
-	@Unique
-	boolean doHideArmor = true;
+//	@Unique
+//	boolean doHideArmor = true;
 
 	@Inject(method = "getAndSetupModelForLayer", at = @At("HEAD"), cancellable = true)
 	private void hideArmor(@NotNull T entity, float brightness, float partialTick, int layer, CallbackInfoReturnable<StaticEntityModel> cir) {
-		if (entity instanceof Player && doHideArmor) { // if it's a player and setting enabled
+		if (entity instanceof Player && ToolboxOptions.hideArmor.value) { // if it's a player and setting enabled
 			cir.setReturnValue(null); // just immediately quit the method lol
 		}
 	}

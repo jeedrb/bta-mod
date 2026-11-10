@@ -1,1 +1,5 @@
 toolbox.options.title=Jeed's Toolbox
+toolbox.options.category.gameplay=Gameplay
+options.saferSneak=Safer Sneak
+toolbox.options.category.cosmetic=Cosmetic
+options.hideArmor=Hide Armor

@@ -1,6 +1,9 @@
 package jeed.toolbox;
 
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.client.gui.options.data.OptionsPage;
+import net.minecraft.client.gui.options.data.OptionsPages;
+import net.minecraft.core.block.Blocks;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import turniplabs.halplibe.HalpLibe;
@@ -11,6 +14,8 @@ public class Toolbox implements ModInitializer {
 	public static final String MOD_ID = HalpLibe.registerMod("jeed-toolbox", true);
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+	public static OptionsPage toolboxOptions;
+
 	@Override
 	public void onInitialize() {
 		CommonEvents.BEFORE_GAME_START.listen(Key.of(MOD_ID), this::beforeGameStart);
@@ -18,11 +23,13 @@ public class Toolbox implements ModInitializer {
 		LOGGER.info("Jeed's BTA Toolbox initialized.");
 	}
 
+
 	public void beforeGameStart() {
 
 	}
 
 	public void afterGameStart() {
-
+		toolboxOptions = new OptionsPage("toolbox.options.title", Blocks.GLOWSTONE.getDefaultStack());
+		OptionsPages.register(toolboxOptions);
 	}
 }

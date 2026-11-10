@@ -8,14 +8,14 @@ import turniplabs.halplibe.event.defs.CommonEvents;
 import turniplabs.halplibe.util.dependency.Key;
 
 public class Toolbox implements ModInitializer {
-	public static final String MOD_ID = HalpLibe.registerMod("jeedplayground", true);
+	public static final String MOD_ID = HalpLibe.registerMod("jeed-toolbox", true);
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitialize() {
 		CommonEvents.BEFORE_GAME_START.listen(Key.of(MOD_ID), this::beforeGameStart);
 		CommonEvents.AFTER_GAME_START.listen(Key.of(MOD_ID), this::afterGameStart);
-		LOGGER.info("Jeed's BTA Playground initialized.");
+		LOGGER.info("Jeed's BTA Toolbox initialized.");
 	}
 
 	public void beforeGameStart() {

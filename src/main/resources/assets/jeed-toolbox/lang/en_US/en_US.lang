@@ -3,3 +3,8 @@ toolbox.options.category.gameplay=Gameplay
 options.saferSneak=Safer Sneak
 toolbox.options.category.cosmetic=Cosmetic
 options.hideArmor=Hide Armor
+options.deerSounds=Deer Sounds
+
+subtitles.mob.deer=Deer living
+subtitles.mob.deer.hurt=Deer hurt
+subtitles.mob.deer.death=Deer death
